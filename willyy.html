@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Grosir</title>
+    <link rel="stylesheet" href="willyy.css">
+</head>
+<body>
+
+<header>
+    <h1>Grosir Maju Jaya</h1>
+    <p>Belanja grosir murah & terpercaya</p>
+</header>
+
+<section class="produk">
+    <div class="card">
+        <h3>Gula 1 Kg</h3>
+        <p>Rp 14.000</p>
+        <button onclick="tambahCart('Gula')">Tambah</button>
+    </div>
+
+    <div class="card">
+        <h3>Beras 5 Kg</h3>
+        <p>Rp 65.000</p>
+        <button onclick="tambahCart('Beras')">Tambah</button>
+    </div>
+
+    <div class="card">
+        <h3>Minyak Goreng</h3>
+        <p>Rp 18.000</p>
+        <button onclick="tambahCart('Minyak')">Tambah</button>
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot">
+    <div class="chat-header">Chat Bot Grosir</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" id="userInput" placeholder="Ketik pesan..."
+           onkeypress="if(event.key==='Enter') kirimPesan()">
+</div>
+
+<script src="willyy.js"></script>
+</body>
+</html>
